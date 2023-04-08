@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div>
+      <h1 class="bottom-space">Random password generator!</h1>
+      <h3 class="bottom-space">It's a password with 16 chars lenght</h3>
+      <p>Password:</p>
+      <h3 class="bottom-space password" id="password"></h3>
+      <button class="bottom-space" onClick={copyPassword()} id="copy-password">Copy password</button>
+      <button onclick={newPassword()}>New Password</button>
+      <h3 class="bottom-space" id="copy"></h3>
+      <p>Want to check how strong the password is?</p>
+      <a class="bottom-space" href="https://www.passwordmonster.com/" target="_blank">Password Strength Checker</a>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
